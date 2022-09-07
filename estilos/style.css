@@ -6,3 +6,69 @@
     Lilás: #5f2c82
 */
 
+:root{
+    --cor0: #49a09d;
+    --cor1: #5f2c82;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    overflow: hidden;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#imagem {
+    display: block;
+    height: 200px;
+    background-image: url(../imagens/metal.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0px 0px;
+}
+
+div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
